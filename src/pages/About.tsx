@@ -14,10 +14,10 @@ export default function About() {
       </Helmet>
       <Navbar />
       <main className="container py-10">
-        <h1 className="text-3xl md:text-4xl font-bold mb-6">Dr. Saif in one sentence</h1>
+        <h1 className="text-3xl md:text-4xl font-bold mb-6 font-playfair">Dr. Saif in one sentence</h1>
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle>Detailed description</CardTitle>
+            <CardTitle className="font-playfair">Detailed description</CardTitle>
             <CardDescription>Interests, vision, and teaching philosophy</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">

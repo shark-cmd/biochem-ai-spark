@@ -33,7 +33,7 @@ export default function Book() {
       </Helmet>
       <Navbar />
       <main className="container py-10">
-        <h1 className="text-3xl md:text-4xl font-bold mb-6">Book a Slot</h1>
+        <h1 className="text-3xl md:text-4xl font-bold mb-6 font-playfair">Book a Slot</h1>
         <Card>
           <CardHeader>
             <CardTitle>Your details</CardTitle>

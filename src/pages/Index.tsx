@@ -48,7 +48,7 @@ export default function Index() {
                 <p className="inline-flex items-center gap-2 text-sm text-muted-foreground">
                   <Sparkles className="opacity-80" /> Premium Biochemistry Coaching
                 </p>
-                <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+                <h1 className="text-4xl md:text-6xl font-bold tracking-tight font-playfair">
                   Learn Biochemistry with Confidence
                 </h1>
                 <p className="text-lg text-muted-foreground max-w-prose">
@@ -83,7 +83,7 @@ export default function Index() {
               <Card key={f.title} className="transition hover:shadow-lg animate-enter">
                 <CardHeader>
                   <div className="h-10 w-10 rounded-md bg-gradient-hero" aria-hidden />
-                  <CardTitle className="mt-3 flex items-center gap-2">
+                  <CardTitle className="mt-3 flex items-center gap-2 font-playfair">
                     <f.icon /> {f.title}
                   </CardTitle>
                   <CardDescription>{f.desc}</CardDescription>
@@ -98,7 +98,7 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-6 items-stretch">
             <Card className="md:col-span-2">
               <CardHeader>
-                <CardTitle>Mission</CardTitle>
+                <CardTitle className="font-playfair">Mission</CardTitle>
                 <CardDescription>
                   Taking you from surface-level facts to mechanism-level mastery—so exams feel natural and labs make sense.
                 </CardDescription>
@@ -111,7 +111,7 @@ export default function Index() {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>Get Started</CardTitle>
+                <CardTitle className="font-playfair">Get Started</CardTitle>
                 <CardDescription>Tell me about your goals and timeline.</CardDescription>
               </CardHeader>
               <CardContent className="flex flex-col gap-3">
