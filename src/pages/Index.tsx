@@ -83,7 +83,7 @@ export default function Index() {
               <Card key={f.title} className="transition hover:shadow-lg animate-enter">
                 <CardHeader>
                   <div className="h-10 w-10 rounded-md bg-gradient-hero" aria-hidden />
-                  <CardTitle className="mt-3 flex items-center gap-2 font-playfair">
+                  <CardTitle className="mt-3 flex items-center gap-2 font-newsreader">
                     <f.icon /> {f.title}
                   </CardTitle>
                   <CardDescription>{f.desc}</CardDescription>
@@ -98,7 +98,7 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-6 items-stretch">
             <Card className="md:col-span-2">
               <CardHeader>
-                <CardTitle className="font-playfair">Mission</CardTitle>
+                <CardTitle className="font-newsreader">Mission</CardTitle>
                 <CardDescription>
                   Taking you from surface-level facts to mechanism-level mastery—so exams feel natural and labs make sense.
                 </CardDescription>
@@ -111,7 +111,7 @@ export default function Index() {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle className="font-playfair">Get Started</CardTitle>
+                <CardTitle className="font-newsreader">Get Started</CardTitle>
                 <CardDescription>Tell me about your goals and timeline.</CardDescription>
               </CardHeader>
               <CardContent className="flex flex-col gap-3">

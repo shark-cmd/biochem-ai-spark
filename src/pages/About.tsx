@@ -17,7 +17,7 @@ export default function About() {
         <h1 className="display text-4xl md:text-5xl mb-6">Dr. Saif in one sentence</h1>
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle className="font-playfair">Detailed description</CardTitle>
+            <CardTitle className="font-newsreader">Detailed description</CardTitle>
             <CardDescription>Interests, vision, and teaching philosophy</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
