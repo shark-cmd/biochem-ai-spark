@@ -45,13 +45,13 @@ export default function Index() {
           <AmbientGlow>
             <div className="container grid md:grid-cols-2 gap-10 items-center py-16">
               <div className="space-y-6 animate-fade-in">
-                <p className="inline-flex items-center gap-2 text-sm text-muted-foreground">
+                <p className="eyebrow inline-flex items-center gap-2 text-muted-foreground">
                   <Sparkles className="opacity-80" /> Premium Biochemistry Coaching
                 </p>
-                <h1 className="text-4xl md:text-6xl font-bold tracking-tight font-playfair">
+                <h1 className="display text-4xl md:text-6xl text-balance">
                   Learn Biochemistry with Confidence
                 </h1>
-                <p className="text-lg text-muted-foreground max-w-prose">
+                <p className="lead max-w-prose">
                   I’m Dr. Saif. I help students truly understand biochemistry—not just memorize it. Explore my AI search to ask anything and book a focused 1:1 session.
                 </p>
                 <div className="flex flex-wrap gap-3">

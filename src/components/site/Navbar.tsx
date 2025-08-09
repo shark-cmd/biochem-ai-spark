@@ -27,7 +27,7 @@ export default function Navbar() {
       <nav className="container flex items-center justify-between py-3">
         <Link to="/" className="flex items-center gap-2 font-semibold tracking-tight">
           <span className="inline-block h-8 w-8 rounded-md bg-gradient-hero" aria-hidden />
-          <span className="font-playfair text-lg">BioCoach with Saif</span>
+          <span className="brand-logo text-xl md:text-2xl">BioCoach with Saif</span>
         </Link>
         <div className="hidden md:flex items-center gap-1">
           {navItems.map((item) => (
