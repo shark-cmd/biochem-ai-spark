@@ -105,8 +105,8 @@ All colors MUST be HSL.
   .story-link::after { content: ""; position: absolute; left: 0; bottom: 0; height: 2px; width: 100%; transform: scaleX(0); transform-origin: bottom right; background: hsl(var(--primary)); transition: transform 300ms ease; }
   .story-link:hover::after { transform: scaleX(1); transform-origin: bottom left; }
   /* Signature pointer glow */
-  .pointer-glow { position: relative; }
-  .pointer-glow::before { content: ""; position: absolute; inset: -2px; background: radial-gradient(600px 600px at var(--x,50%) var(--y,50%), hsl(var(--primary) / 0.15), transparent 40%); pointer-events: none; z-index: 0; }
+  .pointer-glow { position: relative; --x: 50%; --y: 50%; }
+  .pointer-glow::before { content: ""; position: absolute; inset: -2px; background: radial-gradient(600px 600px at var(--x) var(--y), hsl(var(--primary) / 0.15), transparent 40%); pointer-events: none; z-index: 0; }
 
   /* Modern typography utilities */
   .display { @apply font-newsreader font-semibold tracking-tight; line-height: 1.1; }
