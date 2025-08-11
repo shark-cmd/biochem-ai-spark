@@ -26,7 +26,7 @@ export default function Register() {
       </Helmet>
       <Navbar />
       <main className="container py-10">
-        <h1 className="display text-4xl md:text-5xl mb-6">Register New Learner</h1>
+        <h1 className="text-3xl md:text-4xl font-bold mb-6">Register New Learner</h1>
         <Card>
           <CardHeader>
             <CardTitle>Intake Form</CardTitle>
