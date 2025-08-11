@@ -20,7 +20,7 @@ All colors MUST be HSL.
     /* Brand palette: teal → violet */
     --primary: 194 90% 40%;
     --primary-foreground: 210 40% 98%;
-    --primary-glow: 194 90% 85%;
+    --primary_glow: 194 90% 85%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -55,7 +55,7 @@ All colors MUST be HSL.
     --brand-end: 272 75% 60%;
     --gradient-hero: linear-gradient(135deg, hsl(var(--brand-start)) 0%, hsl(var(--brand-end)) 100%);
     --shadow-elegant: 0 10px 30px -10px hsl(var(--brand-end) / 0.25);
-    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.4);
+    --shadow-glow: 0 0 40px hsl(var(--primary_glow) / 0.4);
   }
 
   .dark {
