@@ -86,7 +86,7 @@ export default function Ask() {
       </Helmet>
       <Navbar />
       <main className="container py-10">
-        <h1 className="text-3xl md:text-4xl font-bold mb-6">Medical Biochemistry RAG Engine (Demo)</h1>
+        <h1 className="display text-4xl md:text-5xl mb-6">Medical Biochemistry RAG Engine (Demo)</h1>
         <section className="grid lg:grid-cols-3 gap-6">
           <Card className="lg:col-span-2">
             <CardHeader>
