@@ -43,20 +43,44 @@ export default function Register() {
                 <Input name="email" type="email" required />
               </div>
               <div className="grid gap-2">
-                <label>Field/Program</label>
-                <Input name="program" placeholder="e.g., MBBS, BSc, Nursing" />
+                <label>Upcoming exam date</label>
+                <Input name="examDate" type="date" />
               </div>
               <div className="grid gap-2">
-                <label>Upcoming exam/date</label>
-                <Input name="exam" placeholder="e.g., Midterm in 3 weeks" />
+                <label>Program</label>
+                <Input name="program" placeholder="e.g., MBBS, BSc, Nursing" />
               </div>
               <div className="grid gap-2 md:col-span-2">
-                <label>Which topics trouble you most?</label>
+                <label>Top pain point in biochemistry</label>
                 <Textarea name="pain" placeholder="e.g., enzyme kinetics, glycogen metabolism" />
               </div>
-              <div className="grid gap-2 md:col-span-2">
-                <label>Learning preference</label>
-                <Textarea name="preference" placeholder="Short sprints, detailed derivations, more quizzes, etc." />
+              <div className="grid gap-2">
+                <label>How do you learn best?</label>
+                <select name="learningStyle" className="h-10 rounded-md border border-border bg-background px-3">
+                  <option value="">Select one</option>
+                  <option value="visual">Visual diagrams and pathways</option>
+                  <option value="problems">Step-by-step problem solving</option>
+                  <option value="clinical">Clinical cases first</option>
+                  <option value="analogies">Analogies and big-picture first</option>
+                </select>
+              </div>
+              <div className="grid gap-2">
+                <label>Preferred session flow</label>
+                <select name="sessionFlow" className="h-10 rounded-md border border-border bg-background px-3">
+                  <option value="">Select one</option>
+                  <option value="focus-recap">45 min focus + 15 min recap</option>
+                  <option value="qa-led">60 min Q&A-led</option>
+                  <option value="mixed">Mixed as needed</option>
+                </select>
+              </div>
+              <div className="grid gap-2">
+                <label>Pace preference</label>
+                <select name="pace" className="h-10 rounded-md border border-border bg-background px-3">
+                  <option value="">Select one</option>
+                  <option value="fast">Fast with checkpoints</option>
+                  <option value="moderate">Moderate</option>
+                  <option value="deliberate">Deliberate and slower</option>
+                </select>
               </div>
               <div className="md:col-span-2">
                 <Button type="submit" variant="hero">Submit</Button>

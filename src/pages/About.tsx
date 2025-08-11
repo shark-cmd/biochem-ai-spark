@@ -28,11 +28,11 @@ export default function About() {
               <li>Mechanism-first, memory-second</li>
               <li>Active recall & spaced repetition</li>
               <li>Visual pathways and quick checks</li>
-              <li>AI search for between-session clarity</li>
+              <li>Between-session Q&A support</li>
             </ul>
             <div className="flex gap-3">
               <Button asChild variant="hero"><Link to="/book">Book a Slot</Link></Button>
-              <Button asChild variant="outline"><Link to="/ask">Use AI Search</Link></Button>
+              <Button asChild variant="outline"><Link to="/register">Register</Link></Button>
             </div>
           </CardContent>
         </Card>

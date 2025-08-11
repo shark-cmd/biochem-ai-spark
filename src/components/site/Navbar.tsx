@@ -5,7 +5,6 @@ import { Menu, X } from "lucide-react";
 import ThemeToggle from "@/components/site/ThemeToggle";
 const navItems = [
   { to: "/", label: "Home" },
-  { to: "/ask", label: "Ask (AI)" },
   { to: "/book", label: "Book a Slot" },
   { to: "/about", label: "About" },
   { to: "/register", label: "Register" },

@@ -34,8 +34,8 @@ export default function Index() {
   return (
     <>
       <Helmet>
-        <title>Dr. Saif Biochemistry Coaching | AI RAG Search</title>
-        <meta name="description" content="Personalized biochemistry coaching with an AI-powered RAG search to answer anything in seconds. Book sessions and start mastering pathways." />
+        <title>Dr. Saif Biochemistry Coaching | Book 1:1 Session</title>
+        <meta name="description" content="Personalized biochemistry coaching. Book a 1:1 session to master pathways with mechanism-first teaching and a clear study plan." />
         <link rel="canonical" href="/" />
       </Helmet>
       <Navbar />
@@ -52,14 +52,14 @@ export default function Index() {
                   Learn Biochemistry with Confidence
                 </h1>
                 <p className="lead max-w-prose">
-                  I’m Dr. Saif. I help students truly understand biochemistry—not just memorize it. Explore my AI search to ask anything and book a focused 1:1 session.
+                  I’m Dr. Saif. I help students truly understand biochemistry—not just memorize it. Book a focused 1:1 session and get an exam‑ready study plan.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <Button asChild size="lg" variant="hero" className="hover-scale">
-                    <Link to="/ask">Ask Anything (AI)</Link>
+                    <Link to="/book">Book a Slot</Link>
                   </Button>
                   <Button asChild size="lg" variant="glass" className="hover-scale">
-                    <Link to="/book">Book a Slot</Link>
+                    <Link to="/register">Register Now</Link>
                   </Button>
                 </div>
               </div>
@@ -93,34 +93,36 @@ export default function Index() {
           </div>
         </section>
 
-        {/* Mission */}
         <section className="container py-12">
           <div className="grid md:grid-cols-3 gap-6 items-stretch">
             <Card className="md:col-span-2">
               <CardHeader>
-                <CardTitle className="font-playfair">Mission</CardTitle>
-                <CardDescription>
-                  Taking you from surface-level facts to mechanism-level mastery—so exams feel natural and labs make sense.
-                </CardDescription>
+                <CardTitle className="font-playfair">What you'll get in your first session</CardTitle>
+                <CardDescription>Clear plan, laser focus, and measurable progress from day one.</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">
-                  Sessions blend conceptual mapping, curated practice, and short assessments. My AI search helps you clarify doubts between sessions.
-                </p>
+                <ul className="list-disc pl-5 grid gap-2 text-muted-foreground">
+                  <li>Personalized roadmap based on your syllabus and exam date</li>
+                  <li>Mechanism-first explanation of your top pain point</li>
+                  <li>10-question micro‑assessment to lock in learning</li>
+                  <li>Study routine you can actually follow in 30–45 minutes/day</li>
+                </ul>
+                <div className="mt-4">
+                  <Button asChild variant="hero">
+                    <Link to="/book">Book your first slot</Link>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle className="font-playfair">Get Started</CardTitle>
-                <CardDescription>Tell me about your goals and timeline.</CardDescription>
+                <CardTitle className="font-playfair">Trusted results</CardTitle>
+                <CardDescription>Outcomes students report</CardDescription>
               </CardHeader>
-              <CardContent className="flex flex-col gap-3">
-                <Button asChild variant="hero">
-                  <Link to="/register">Register Now</Link>
-                </Button>
-                <Button asChild variant="outline">
-                  <Link to="/about">About Dr. Saif</Link>
-                </Button>
+              <CardContent className="space-y-2 text-muted-foreground">
+                <p>“Enzyme kinetics finally clicked. From 48% to 76% in three weeks.”</p>
+                <p>“Made pathways intuitive—no more blind memorization.”</p>
+                <p className="text-xs">Spots are limited to keep sessions high‑quality.</p>
               </CardContent>
             </Card>
           </div>
@@ -132,7 +134,7 @@ export default function Index() {
           <nav className="flex gap-4">
             <Link className="story-link" to="/about">About</Link>
             <Link className="story-link" to="/book">Book</Link>
-            <Link className="story-link" to="/ask">AI Search</Link>
+            <Link className="story-link" to="/register">Register</Link>
           </nav>
         </div>
       </footer>

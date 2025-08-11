@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import Ask from "./pages/Ask";
+// removed Ask page
 import Book from "./pages/Book";
 import About from "./pages/About";
 import Register from "./pages/Register";
@@ -20,7 +20,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/ask" element={<Ask />} />
+          {/* removed Ask route */}
           <Route path="/book" element={<Book />} />
           <Route path="/about" element={<About />} />
           <Route path="/register" element={<Register />} />
