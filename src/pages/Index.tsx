@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/site/Navbar";
 import AmbientGlow from "@/components/site/AmbientGlow";
-import heroImg from "@/assets/hero-biochem.jpg";
+import HeroSlideshow from "@/components/site/HeroSlideshow";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Brain, FlaskConical, GraduationCap, HeartPulse, Sparkles } from "lucide-react";
@@ -63,14 +63,7 @@ export default function Index() {
                   </Button>
                 </div>
               </div>
-              <div className="relative rounded-xl border border-border shadow-lg overflow-hidden animate-scale-in">
-                <img
-                  src={heroImg}
-                  alt="Biochemistry molecules gradient hero"
-                  loading="eager"
-                  className="h-full w-full object-cover"
-                />
-              </div>
+              <HeroSlideshow />
             </div>
           </AmbientGlow>
           <div className="absolute inset-0 -z-10 bg-gradient-hero opacity-20" aria-hidden />
