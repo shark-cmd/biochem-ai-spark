@@ -51,11 +51,11 @@ All colors MUST be HSL.
     --sidebar-ring: 217.2, 91.2%, 59.8%;
 
     /* Gradients & shadows */
-    --brand-start: 194, 90%, 45%;
-    --brand-end: 272, 75%, 60%;
-    --gradient-hero: linear-gradient(135deg, hsl(var(--brand-start)) 0%, hsl(var(--brand-end)) 100%);
-    --shadow-elegant: 0 10px 30px -10px hsla(var(--brand-end), 0.25);
-    --shadow-glow: 0 0 40px hsla(var(--primary-glow), 0.4);
+    --brand-start: 194 90% 45%;
+    --brand-end: 272 75% 60%;
+    --gradient-hero: linear-gradient(135deg, hsl(194 90% 45%) 0%, hsl(272 75% 60%) 100%);
+    --shadow-elegant: 0 10px 30px -10px hsl(272 75% 60% / 0.25);
+    --shadow-glow: 0 0 40px hsl(194 90% 85% / 0.4);
   }
 
   .dark {
@@ -106,7 +106,7 @@ All colors MUST be HSL.
   .story-link:hover::after { transform: scaleX(1); transform-origin: bottom left; }
   /* Signature pointer glow */
   .pointer-glow { position: relative; --x: 50%; --y: 50%; }
-  .pointer-glow::before { content: ""; position: absolute; inset: -2px; background: radial-gradient(600px 600px at var(--x) var(--y), hsla(var(--primary), 0.15), transparent 40%); pointer-events: none; z-index: 0; }
+  .pointer-glow::before { content: ""; position: absolute; inset: -2px; background: radial-gradient(600px 600px at var(--x) var(--y), hsl(194 90% 40% / 0.15), transparent 40%); pointer-events: none; z-index: 0; }
 
   /* Modern typography utilities */
   .display { @apply font-newsreader font-semibold tracking-tight; line-height: 1.1; }
